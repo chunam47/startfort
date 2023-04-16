@@ -1,0 +1,376 @@
+// // css app
+// .ant-menu-item:hover:not(.ant-menu-item-selected, .no-hover) {
+//   background: unset !important;
+//   color: unset !important;
+// }
+@import "swiper/swiper-bundle.css";
+@import "swiper/css";
+@import "swiper/css/pagination";
+@import "swiper/css/navigation";
+
+@font-face {
+  font-family: "Aviano Serif";
+  src: local("Aviano Serif"),
+    url("../../assets/fonts/AvianoSerif.otf") format("opentype");
+}
+
+body {
+  font-family: "Montserrat" !important;
+}
+.glow-on-hover {
+  cursor: pointer;
+  z-index: 0;
+}
+
+.glow-on-hover:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.shadows-button-start-fort {
+  background: #21294d;
+  box-shadow: 4px 4px 0px #070707;
+}
+
+.font-montserrat {
+  font-family: "Montserrat" !important;
+}
+.font-aviano-serif {
+  font-family: "Aviano Serif" !important;
+}
+
+.ant-menu-item-selected {
+  background: unset !important;
+  color: #8b9bff !important;
+  font-weight: 600 !important;
+}
+.ant-menu-item:hover,
+.no-hover:hover {
+  background: unset !important;
+}
+.ant-menu-vertical {
+  border-inline-end: unset !important;
+}
+.header-app {
+  background: rgba(255, 255, 255, 0.9);
+  position: fixed;
+  .menu {
+    border-inline-end: unset !important;
+    gap: 12px;
+    &__item {
+      font-family: "Montserrat";
+      font-style: normal;
+      width: 100%;
+      padding: 0 24px;
+      text-overflow: unset;
+      color: #21294d;
+      text-transform: uppercase;
+      overflow: inherit;
+      font-weight: 500;
+      font-size: 16px;
+    }
+  }
+}
+
+.title-app {
+  font-family: "Aviano Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 113.5%;
+  background: linear-gradient(
+    209.53deg,
+    #21294d 6.68%,
+    #8b9bff 54.3%,
+    #87d4ff 105.43%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.bg-starfort-launchpad {
+  background-image: url(../img/bg-starfort-launchpad.svg);
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  max-width: 100vw;
+}
+
+.bg-staking-container {
+  background-image: url("../img/bg-staking.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.roadmap-container {
+  background-image: url("../img/bg-roadmap.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+
+  .roadmap-items {
+    background: #feffff;
+    border: 1px solid #dfe5f7;
+    position: relative;
+
+    img {
+      position: absolute;
+      right: 10px;
+      top: 20px;
+    }
+  }
+  .roadmap-items:nth-child(2) {
+    margin-top: 90px;
+  }
+  .roadmap-items:nth-child(3) {
+    margin-top: 180px;
+  }
+  .roadmap-items:nth-child(4) {
+    margin-top: 270px;
+  }
+}
+.partner-container {
+  &__content {
+    img {
+      width: 20%;
+    }
+  }
+}
+
+.swiper-custom {
+  display: flex !important;
+}
+
+.swiper-pagination {
+  bottom: -5px;
+  .swiper-pagination-bullet {
+    background: #070707;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .desc-title {
+    text-align: center;
+  }
+  .header-app {
+    .menuButton {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 10px;
+      color: #070707;
+      height: 45px;
+    }
+
+    .menu {
+      display: none;
+    }
+    .btn-lauch {
+      display: none;
+    }
+  }
+
+  .home-container {
+    display: flex;
+    flex-direction: column-reverse;
+
+    .img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        display: none;
+      }
+    }
+
+    &__content {
+      h1 {
+        text-align: center;
+      }
+    }
+    &__button {
+      justify-content: center;
+    }
+  }
+
+  .more-container {
+    &__content {
+      grid-template-columns: auto auto;
+    }
+  }
+
+  .starfort-launchpad-container {
+    .bg-starfort-launchpad {
+      display: none;
+    }
+    &__content {
+      display: flex;
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        justify-content: center;
+        align-items: center;
+      }
+      &--items {
+        position: unset;
+        margin: 0;
+      }
+    }
+  }
+
+  .dex-container {
+    &__title {
+      text-align: center;
+    }
+    &__content {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+
+  .staking-container {
+    &__title {
+      text-align: center;
+    }
+    &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+
+      &--img {
+        width: 100%;
+      }
+      &--items {
+        position: unset;
+      }
+    }
+  }
+
+  .roadmap-container {
+    &__content {
+      display: grid;
+      grid-template-columns: auto auto;
+
+      .roadmap-items:nth-child(3) {
+        margin-top: 0;
+      }
+      .roadmap-items:nth-child(4) {
+        margin-top: 90px;
+      }
+    }
+  }
+
+  .content-footer {
+    &__content {
+      display: flex;
+      flex-direction: column;
+      gap: 48px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .starfort-launchpad-container {
+    &__content {
+      &--items {
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+    }
+  }
+
+  .more-container {
+    &__content {
+      span {
+        width: 100%;
+      }
+    }
+  }
+
+  .staking-container {
+    &__content {
+      &--items {
+        padding-left: 24px;
+        padding-right: 24px;
+
+        hr {
+          margin: 0 24px;
+        }
+      }
+    }
+  }
+  .content-footer {
+    &__content {
+      &--item {
+        display: grid;
+        grid-template-columns: auto auto;
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .title-app {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .desc-title {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .title-responsive {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .home-container {
+    .img {
+      img {
+        display: none;
+      }
+    }
+  }
+
+  .starfort-launchpad-container {
+    &__content {
+      &--button {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+
+  .dex-container {
+    &__content {
+      &--button {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}

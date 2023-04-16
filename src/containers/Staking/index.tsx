@@ -53,7 +53,7 @@ const Staking = () => {
             </div>
             <div className="absolute bottom-[100px] right-0 flex items-center w-full staking-container__content--button">
               <span className="bg-[#797979] w-full h-[1px]"></span>
-              <button className="bg-[#21294D] px-3 py-4 text-white w-[157px]">
+              <button className="glow-on-hover bg-[#21294D] px-3 py-4 text-white w-[157px]">
                 Go to Farms
               </button>
             </div>

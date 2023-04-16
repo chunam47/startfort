@@ -14,11 +14,23 @@
     url("../../assets/fonts/AvianoSerif.otf") format("opentype");
 }
 
-// @font-face {
-//   font-family: "Montserrat";
-//   src: local("Montserrat"),
-//     url("../../assets/fonts/QuattrocentoSans-Regular.ttf") format("opentype");
-// }
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 400;
+  src: local("Montserrat"),
+    url("../../assets/fonts/QuattrocentoSans-Regular.ttf") format("opentype");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 700;
+  src: local("Montserrat"),
+    url("../../assets/fonts/QuattrocentoSans-Bold.ttf") format("opentype");
+}
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"),
+    url("../../assets/fonts/QuattrocentoSans-Italic.ttf") format("opentype");
+}
 
 body {
   font-family: "Montserrat" !important;

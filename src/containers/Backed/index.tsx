@@ -17,7 +17,7 @@ const Backed = () => {
   return (
     <React.Fragment>
       <div className="bg-[#E9F3FB]">
-        <BlockContent className="py-10">
+        <BlockContent className="py-10 relative">
           <div className="flex flex-col justify-center items-center">
             <h2 className="text-[40px] font-[700] text-[#21294D] leading-[52px] capitalize">
               Backed
@@ -38,7 +38,7 @@ const Backed = () => {
               }}
               loop={true}
               modules={[Autoplay, Pagination, Navigation]}
-              className="mt-6 "
+              className="mt-6 swiper-pagination-custom"
             >
               <>
                 <SwiperSlide className="swiper-custom flex justify-center items-center">

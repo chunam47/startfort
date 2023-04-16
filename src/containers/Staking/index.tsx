@@ -40,7 +40,7 @@ const Staking = () => {
               </div>
               <hr className="w-[1px] h-[229px] bg-[#21294D] mx-16" />
               <div className="flex flex-col items-center gap-4 justify-center">
-                <Image alt="" src={img1} />
+                <Image alt="" src={img2} />
                 <div className="flex flex-col gap-2 items-center justify-center">
                   <span className="title-responsive font-[600] text-[24px] text-[#29387F] text-center leading-8">
                     Vesting contracts & token claim

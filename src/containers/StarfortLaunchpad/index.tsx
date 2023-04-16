@@ -9,7 +9,7 @@ import BlockItem from "../../components/BlockItem";
 const StarfortLaunchpad = () => {
   return (
     <React.Fragment>
-      <div className="pt-24  starfort-launchpad-container">
+      <div className="pt-24 starfort-launchpad-container">
         <BlockContent className="flex flex-col justify-center items-center">
           <h2 className="text-[40px] text-center font-[700] text-[#21294D] leading-[52px] capitalize">
             Starfort Launchpad

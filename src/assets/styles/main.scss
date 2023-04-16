@@ -158,13 +158,6 @@ body {
     margin-top: 270px;
   }
 }
-.partner-container {
-  &__content {
-    img {
-      width: 20%;
-    }
-  }
-}
 
 .swiper-custom {
   display: flex !important;
@@ -174,6 +167,15 @@ body {
   bottom: -5px;
   .swiper-pagination-bullet {
     background: #070707;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .dex-container {
+    &__content {
+      .img {
+        top: 200px;
+      }
+    }
   }
 }
 @media screen and (max-width: 1024px) {
@@ -249,6 +251,10 @@ body {
     }
   }
 
+  .root-dex {
+    padding-bottom: 96px;
+  }
+
   .dex-container {
     &__title {
       text-align: center;
@@ -256,6 +262,15 @@ body {
     &__content {
       display: flex;
       flex-direction: column-reverse;
+
+      .img {
+        position: unset;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 100%;
+      }
     }
   }
 
@@ -281,6 +296,9 @@ body {
         position: unset;
         span {
           display: none;
+        }
+        button {
+          width: 100%;
         }
       }
     }
@@ -309,6 +327,10 @@ body {
   }
 }
 @media screen and (max-width: 768px) {
+  .glow-on-hover:hover {
+    transform: unset;
+    transition: unset;
+  }
   .starfort-launchpad-container {
     &__content {
       &--items {
@@ -372,15 +394,26 @@ body {
   .starfort-launchpad-container {
     &__content {
       &--button {
+        margin-left: 0;
         display: flex;
         flex-direction: column;
       }
     }
   }
 
+  .swiper-pagination-custom {
+    position: static !important;
+
+    .swiper-pagination {
+      position: absolute !important;
+      bottom: 15px !important;
+    }
+  }
+
   .dex-container {
     &__content {
       &--button {
+        margin-left: 0;
         display: flex;
         flex-direction: column;
       }

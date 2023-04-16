@@ -108,7 +108,7 @@ export default function Footer() {
   return (
     <div className="footer">
       <div className="content-footer bg-[#21294D]">
-        <BlockContent className="flex justify-around pt-14 pb-20 content-footer__content">
+        <BlockContent className="flex justify-around pt-14 pb-20 content-footer__content items-center">
           <div>
             <Image src={img} alt="" />
           </div>

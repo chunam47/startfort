@@ -43,10 +43,10 @@ const Staking = () => {
                 <Image alt="" src={img1} />
                 <div className="flex flex-col gap-2 items-center justify-center">
                   <span className="title-responsive font-[600] text-[24px] text-[#29387F] text-center leading-8">
-                    LP farms and single asset staking
+                    Vesting contracts & token claim
                   </span>
                   <span className="font-[400] text-[16px] leading-5 text-[#21294D] text-center">
-                    Easy to set up incentives for token holders
+                    Anyone can verify projects vesting terms.
                   </span>
                 </div>
               </div>

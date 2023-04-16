@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-page-custom-font */
 import Footer from "./footer";
 import Header from "./header";
 import styles from "@assets/styles/Root.module.scss";
@@ -55,6 +56,17 @@ const Layout: FC<ILayout> = ({
         <meta name="twitter:image:alt" content="Zkp app blockchain" />
         <meta name="twitter:site" content="Zkp app blockchain" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin=""
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+          rel="stylesheet"
+        />
+
         {/* <!--  Non-Essential, But Required for Analytics --> */}
         <meta name="referrer" content="origin" />
       </Head>

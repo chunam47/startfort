@@ -56,16 +56,6 @@ const Layout: FC<ILayout> = ({
         <meta name="twitter:image:alt" content="Zkp app blockchain" />
         <meta name="twitter:site" content="Zkp app blockchain" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap"
-          rel="stylesheet"
-        />
 
         {/* <!--  Non-Essential, But Required for Analytics --> */}
         <meta name="referrer" content="origin" />

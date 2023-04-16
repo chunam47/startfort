@@ -28,18 +28,19 @@ const HomeContainer = () => {
         <div className="grid grid-cols-2 mb-12 home-container" id="home">
           <div className="pt-12 home-container__content">
             <h1 className="uppercase font-medium text-[#21294D] text-5xl title-app font-aviano-serif">
-              the launchpad protocol for everyone
+              The&nbsp;launchpad protocol for everyone
             </h1>
             <div className=" desc-title text-gray-400 pt-4 text-[20px] font-[400] font-montserrat">
               Starfort Exchange helps everyone to create their own tokens and
-              token sales in few seconds. Tokens created on Starfort Exchange
-              will be verified and published on explorer websites.
+              token sales in few seconds.
+              <br /> Tokens created on Starfort Exchange will be verified and
+              published on explorer websites.
             </div>
             <div className="flex gap-6 pt-10 home-container__button">
-              <button className="glow-on-hover py-3 px-4 text-white font-medium shadows-button-start-fort">
+              <button className="glow-on-hover py-3 px-6 text-white font-medium shadows-button-start-fort">
                 Create Now
               </button>
-              <button className="glow-on-hover py-3 px-4 text-[#21294D] border-solid border-2 border-[#21294D]">
+              <button className="glow-on-hover py-3 px-6 text-[#21294D] border-solid border-2 border-[#21294D]">
                 Learn More
               </button>
             </div>
@@ -59,7 +60,7 @@ const HomeContainer = () => {
               ))}
             </div>
           </div>
-          <div className="img">
+          <div className="img absolute right-0 top-0 max-w-[50%]">
             <Image className="" alt="" src={img} />
           </div>
         </div>

@@ -28,12 +28,12 @@ const StarfortLaunchpad = () => {
                 <BlockItem
                   img={img2}
                   title="Public SHO"
-                  decs="Public SHOs allow anyone with more than $500 USD worth of tokens in their wallets to participatge"
+                  decs="Public SHOs allow anyone with more than $500 USD worth of tokens in their wallets to participate"
                 />
               </div>
               <div className="relative">
                 <BlockItem
-                  img={img2}
+                  img={img3}
                   title="Private SHO"
                   decs="Stake minimum 250 STF to access private SHOs with higher winning chances and larger allocation sizes"
                 />

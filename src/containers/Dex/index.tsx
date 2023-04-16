@@ -32,18 +32,18 @@ const Dex = () => {
     },
   ];
   return (
-    <React.Fragment>
+    <div className="relative">
       <div className="bg-[#E9F3FB]">
-        <BlockContent className="pt-24 pb-12 dex-container">
+        <BlockContent className="pt-24 pb-40 dex-container ">
           <div className="pb-10 dex-container__title">
-            <h2 className="mb-1 text-[40px] text-center font-[700] text-[#21294D] leading-[52px] capitalize">
+            <h2 className="mb-1 text-[40px] font-[700] text-[#21294D] leading-[52px] capitalize">
               Starfort DEX
             </h2>
             <span className="text-[#797979] desc-title font-[400] text-[20px] leading-[26px]">
               Unlock the full power of the STARFOR ecosystem through staking
             </span>
           </div>
-          <div className="grid grid-cols-2 gap-5 dex-container__content">
+          <div className="grid grid-cols-2 gap-5 dex-container__content ">
             <div>
               <div className="flex flex-col gap-6">
                 {data.map((item, index) => (
@@ -66,13 +66,13 @@ const Dex = () => {
                 </button>
               </div>
             </div>
-            <div>
+            <div className="absolute right-0 top-[96px] max-w-[50%]">
               <Image alt="" src={img} />
             </div>
           </div>
         </BlockContent>
       </div>
-    </React.Fragment>
+    </div>
   );
 };
 

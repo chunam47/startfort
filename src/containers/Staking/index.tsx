@@ -24,9 +24,9 @@ const Staking = () => {
             <Image
               alt=""
               src={img}
-              className="staking-container__content--img"
+              className="staking-container__content--img relative z-[1]"
             />
-            <div className="staking-container__content--items bg-[#EEF1F7] flex py-5 px-24 absolute bottom-[180px] left-[430px]">
+            <div className="staking-container__content--items bg-[#EEF1F7] flex py-5 px-24 z-[2] absolute bottom-[180px] left-[430px]">
               <div className="flex flex-col items-center gap-4 justify-center">
                 <Image alt="" src={img1} />
                 <div className="flex flex-col gap-2 items-center justify-center">
@@ -50,6 +50,12 @@ const Staking = () => {
                   </span>
                 </div>
               </div>
+            </div>
+            <div className="absolute bottom-[100px] right-0 flex items-center w-full staking-container__content--button">
+              <span className="bg-[#797979] w-full h-[1px]"></span>
+              <button className="bg-[#21294D] px-3 py-4 text-white w-[157px]">
+                Go to Farms
+              </button>
             </div>
           </div>
           <Partner />

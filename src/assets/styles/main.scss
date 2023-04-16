@@ -270,6 +270,13 @@ body {
       &--items {
         position: unset;
       }
+
+      &--button {
+        position: unset;
+        span {
+          display: none;
+        }
+      }
     }
   }
 

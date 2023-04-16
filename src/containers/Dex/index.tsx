@@ -33,7 +33,7 @@ const Dex = () => {
   ];
   return (
     <React.Fragment>
-      <div className="bg-[#E9F3FB] pt-24 pb-[14rem] relative root-dex">
+      <div className="bg-[#E9F3FB] pt-24 pb-[14rem] relative root-dex" id="dex">
         <BlockContent className="dex-container ">
           <div className="pb-10 dex-container__title">
             <h2 className="mb-1 text-[40px] font-[700] text-[#21294D] leading-[52px] capitalize">

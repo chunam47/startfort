@@ -36,7 +36,10 @@ const MoreContainer = () => {
   return (
     <React.Fragment>
       <BlockContent className="pt-24 more-container">
-        <div className="flex flex-col justify-center items-center">
+        <div
+          className="flex flex-col justify-center items-center"
+          id="launchpad"
+        >
           <h2 className="text-[40px] text-center font-[700] text-[#21294D] leading-[52px] capitalize">
             More than a launchpad
           </h2>

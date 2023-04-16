@@ -112,7 +112,7 @@ export default function Footer() {
           <div>
             <Image src={img} alt="" />
           </div>
-          <div className="flex gap-16 content-footer__content--item">
+          <div className="flex gap-16 flex-wrap content-footer__content--item">
             {data.map((item, index) => (
               <div key={index} className="flex flex-col gap-6 ">
                 <h2 className="text-white text-[16px] leading-5 font-[600]">

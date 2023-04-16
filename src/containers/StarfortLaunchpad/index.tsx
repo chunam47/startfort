@@ -1,12 +1,15 @@
 import React from "react";
 import BlockContent from "../../components/BlockContent";
 import img from "@assets/img/img-starfort-launchpad.svg";
+import imgRes from "@assets/img/img-starfort-launchpad-res.svg";
 import img2 from "@assets/img/img-starfort-launchpad-1.svg";
 import img3 from "@assets/img/img-starfort-launchpad-2.svg";
 import Image from "next/image";
 import BlockItem from "../../components/BlockItem";
+import useMediaQuery from "../../hook/useMedia";
 
 const StarfortLaunchpad = () => {
+  const matches = useMediaQuery("(max-width: 1024px)");
   return (
     <React.Fragment>
       <div className="pt-24 starfort-launchpad-container">
@@ -22,7 +25,11 @@ const StarfortLaunchpad = () => {
         <div className="pt-14 relative pb-24 starfort-launchpad-container__content">
           <div className="bg-starfort-launchpad"></div>
           <BlockContent className="relative content">
-            <Image src={img} alt="" className="img-content" />
+            <Image
+              src={matches ? imgRes : img}
+              alt=""
+              className="img-content"
+            />
             <div className="starfort-launchpad-container__content--items bg-[#29387F] px-28 pt-24 pb-12 flex flex-col justify-center items-center absolute z-[1] mr-5 bottom-[100px] left-[400px]">
               <div className="relative mb-6">
                 <BlockItem

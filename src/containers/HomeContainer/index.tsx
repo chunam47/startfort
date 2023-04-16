@@ -1,7 +1,9 @@
 import React from "react";
 import BlockContent from "@components/BlockContent";
 import img from "@assets/img/home.svg";
+import imgRes from "@assets/img/bg-home-res.svg";
 import Image from "next/image";
+import useMediaQuery from "../../hook/useMedia";
 
 const HomeContainer = () => {
   const data = [
@@ -22,15 +24,16 @@ const HomeContainer = () => {
       dec: "Total Values Locked",
     },
   ];
+  const matches = useMediaQuery("(max-width: 1024px)");
   return (
     <React.Fragment>
       <BlockContent className="pt-12 ">
-        <div className="grid grid-cols-2 mb-12 home-container" id="home">
+        <div className="mb-12 home-container" id="home">
           <div className="pt-12 home-container__content">
             <h1 className="uppercase font-medium text-[#21294D] text-5xl title-app font-aviano-serif">
-              The&nbsp;launchpad protocol for everyone
+              The launchpad protocol for everyone
             </h1>
-            <div className=" desc-title text-gray-400 pt-4 text-[20px] font-[400] font-montserrat">
+            <div className="desc-title text-gray-400 pt-4 text-[20px] font-[400] font-montserrat">
               Starfort Exchange helps everyone to create their own tokens and
               token sales in few seconds.
               <br /> Tokens created on Starfort Exchange will be verified and
@@ -61,7 +64,7 @@ const HomeContainer = () => {
             </div>
           </div>
           <div className="img absolute right-0 top-0 max-w-[50%]">
-            <Image className="" alt="" src={img} />
+            <Image className="" alt="" src={matches ? imgRes : img} />
           </div>
         </div>
       </BlockContent>
